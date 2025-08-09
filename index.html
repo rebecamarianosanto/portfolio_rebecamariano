@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeca Mariano - Portfólio</title>
+    <link rel="shortcut icon" href="imagens/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awsome - icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <!-- Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="about.js">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <a href="#">Portfólio</a>
+        </div>
+
+        <nav>
+            <div class="social-media">
+                <a
+                    href="mailto: rebecamarianosanto@gmail.com?cc=devrebecamariano@gmail.com&assunto=Portf%C3%B3lio%20Rebeca%20Mariano%3A"
+                    target="_blank"
+                    next="external"
+                    aria-label="Acessar e-mail"
+                    ><i class="fa-solid fa-envelope"></i
+                ></a>
+                <a
+                    href="https://wa.me/5511949158503?text=Ol%C3%A1%2C%20tudo%20bem%3F"
+                    target="_blank"
+                    next="external"
+                    aria-label="Acessar WhatsApp"
+                    ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a
+                    href="https://github.com/rebecamarianosanto"
+                    target="_blank"
+                    next="external"
+                    aria-label="Acessar GitHub"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/rebeca-santo/"
+                    target="_blank"
+                    next="external"
+                    aria-label="Acessar linkedin"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
+
+            <button class="btn-menu" onclick="animarMenu()" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="links-btn-menu" id="links-btn-menu">
+            <div class="user">
+                <p class="bemvindo-user">Seja bem-vindo ao meu porfólio!</p>
+                <div class="img-logo-menu"></div>
+                <div class="user-name">
+                <p>Rebeca Mariano</p>
+                <p>rebecamarianosanto@gmail.com</p>
+                </div>
+            </div>
+            <div class="links-acesso-menu">
+                <a class="menu-link" href="#">
+                <i class="fa-solid fa-house"></i>
+                Home
+                </a>
+                <a class="menu-link" href="#about">
+                <i class="fa-solid fa-user"></i>
+                Sobre mim
+                </a>
+                <a class="menu-link" href="#projetos">
+                <i class="fa-solid fa-laptop-code"></i>
+                Projetos
+                </a>
+                <a class="menu-link" href="#contato">
+                <i class="fa-solid fa-address-card"></i>
+                Contatos
+                </a>
+                <a class="menu-link" href="pdf-cv/Rebeca Mariano - Curriculo Profissional.pdf" download="Curriculo Rebeca Mariano" type="application/pdf">
+                <i class="fa-solid fa-globe"></i>
+                Baixar currículo
+                </a>
+            </div>
+            </div>
+        </nav>
+
+        <!-- script para ocultar as divs .logo e .icons-social-media ao rolar a página 50px -->
+        <script>
+            const linksHeader = document.querySelector(".logo");
+            const linksHeaderIcons = document.querySelector(".social-media");
+            window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                linksHeader.style.display = "none";
+                linksHeaderIcons.style.display = "none";
+            } else {
+                linksHeader.style.display = "flex";
+                linksHeaderIcons.style.display = "flex";
+            }
+            });
+        </script>
+    </header>
+
+    <section class="hero">
+        <div class="container-hero">
+            <div class="busca-dev">
+                <p>Busca.<span>Dev</span></p>
+            </div>
+            <div class="search">
+                <div class="pesquisa">
+                    <div class="campo-pesquisa">
+                        <div class="pesquisa-name">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <h1 class="name">Rebeca Mariano</h1>
+                        </div>
+                        <div class="icons-pesquisa">
+                            <i class="fa-solid fa-microphone"></i>
+                            <a href="#abrir" class="btn-about-imgs"><i class="fa-regular fa-images"></i></a>
+
+                            <div class="about-imgs" id="abrir">
+                                <div class="container-about-imgs"> 
+                                    <a href="#" class="fechar-btn">X</a>
+
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide photo1"></div>
+                                            <div class="swiper-slide photo2"></div>
+                                            <div class="swiper-slide photo3"></div> 
+                                            <div class="swiper-slide photo4"></div>
+                                            <div class="swiper-slide photo5"></div>
+
+                                        </div>
+                                        
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultado">
+                    <p class="mensagem-resultados-buscadev">
+                        Resultados do Busca.Dev - <span>Rebeca Mariano</span>
+                    </p>
+                    <div class="resultado-rebeca">
+                        <a href="#about">
+                            <div class="img-resultado-rebeca" aria-label="Foto Rebeca Mariano"></div>
+                            <div class="info-rebeca">
+                                <h2>Rebeca Mariano</h2>
+                                <p>Analista e desenvolvedora web júnior - Portfólio de apresentação</p>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#projetos">
+                        <i class="fa-solid fa-magnifying-glass"></i> Rebeca Mariano
+                        <span>Projetos</span></a>
+                    <a href="#contato"><i class="fa-solid fa-magnifying-glass"></i> Rebeca Mariano
+                        <span>Contatos</span></a>
+                    <a href="pdf-cv/Rebeca Mariano - Curriculo Profissional.pdf" download="Curriculo Rebeca Mariano" type="application/pdf"><i class="fa-solid fa-magnifying-glass"></i>Rebeca Mariano
+                        <span>Baixar currículo</span></a>
+                </div>
+            </div>
+            <p class="aviso-user">
+                Selecione a pesquisa do seu interesse <i class="fa-solid fa-arrow-pointer"></i>
+            </p>
+        </div>
+    </section>
+
+    <section class="about" data-aos="fade-zoom" data-aos-duration="1000">
+        <div class="section-about" id="about">
+            <div class="container-about">
+                <div class="title-about">
+                    <h2>Sobre</h2>
+                    <div class="linha-title"></div>
+                </div>
+                <div class="text-about"> 
+                    <p> 
+                        Profissional com mais de 9 anos de experiência na área de TI, atuando em suporte técnico, análise de sistemas e infraestrutura. Minha jornada me proporcionou sólida vivência no atendimento ao usuário, resolução de incidentes e na implementação de soluções.
+
+                        <p>Apaixonada por tecnologia e motivada a contribuir com projetos inovadores, que sejam acessíveis e voltados às reais necessidades dos usuários, meu objetivo é desenvolver ideias em linhas de código, interfaces modernas e experiências digitais intuitivas, que conectem tecnologia e usabilidade de forma leve e eficiente.</p>
+
+                        <a href="pdf-cv/Rebeca Mariano - Curriculo Profissional.pdf" download="Curriculo Rebeca Mariano" type="application/pdf">Saiba mais <i class="fa-solid fa-link"></i></a>
+                    </p>
+  
+                </div>
+                <div class="container-tecnologias">
+                    <div class="subtitle-tecnologia">
+                        <h3>Tecnologias e ferramentas</h3>
+                        <!-- <div class="linha-title"></div> -->
+                    </div>
+                    <div class="txt-tecnocologia">
+                        <p>
+                            Estou sempre aberta a novos desafios e oportunidades de aprendizado, buscando constantemente aprimorar minhas habilidades e expandir meu conhecimento na área de desenvolvimento e sobre o universo da tecnologia.
+                        </p>
+                    </div>
+                    <div class="icons-tecnologia">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-php"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <i class="fa-brands fa-figma"></i>
+                        <i class="fa-brands fa-sass"></i>
+                        <i class="fa-solid fa-cloud"></i>
+                        <i class="fa-brands fa-aws"></i>
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="img-about" data-aos="fade-zoom" data-aos-duration="2000">
+                <div class="filtro-img-about"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-projetos" data-aos="fade-zoom" data-aos-duration="100">
+        <div class="projetos" id="projetos">
+            <div class="title-projetos">
+                <h2>Meus <span>Projetos</span></h2>
+                <div class="linha-projetos"></div>
+            </div>
+            <div class="container-projetos">
+                <!-- projeto 1 -->
+                <div class="card-projetos" data-aos="fade-zoom" data-aos-duration="2000">
+                    <div class="img-projeto studio">
+
+                    </div>
+                    <div class="info-projeto">
+                        <div class="card-title">
+                            <h3>Site - Estúdio Wendy Andrade</h3>
+                            <p>Projeto Real | Desenvolvido para Negócio Local</p>
+                        </div>
+
+                        <p class="txt-projeto">Projeto desenvolvido para uma cliente real, proprietária do estúdio de beleza especializado em cuidados de unhas, sobrancelhas e estética. A landing page tem como objetivo reforçar a presença digital do estúdio, apresentar os serviços oferecidos, facilitar o agendamento e contato com clientes por meio do WhatsApp e redes sociais. (Em deploy)</p>
+                        <div class="btn-projetos">
+                            <a href="https://rebecamarianosanto.github.io/proj_studio_wendy/" target="_blank" next="external" aria-label="Acessar projeto"><i class="fa-solid fa-link"></i> Acessar</a>
+                            <a href="https://github.com/rebecamarianosanto/proj_studio_wendy" target="_blank" next="external" aria-label="Acessar projeto no GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- projeto 2 -->
+                <div class="card-projetos position-projeto" data-aos="fade-zoom" data-aos-duration="3000">
+                    <div class="info-projeto">
+                        <div class="card-title">
+                            <h3>Landing Page – Hamburgueria Burguer10</h3>
+                            <p>Projeto pessoal | Front-End Development</p>
+                        </div>
+                        <p class="txt-projeto">Landing Page de apresentação da Hamburgueria Burguer10, um espaço descontraído ideal para happy hour, jantares e encontros com amigos e família. O site fornece informações claras sobre o cardápio, ambiente, localização e contatos, visando engajar o público local e facilitar reservas.</p>
+                        <div class="btn-projetos">
+                            <a href="https://rebecamarianosanto.github.io/hamburgueria-burguer10/" target="_blank" next="external" aria-label="Acessar projeto"><i class="fa-solid fa-link"></i> Acessar</a>
+                            <a href="https://github.com/rebecamarianosanto/hamburgueria-burguer10" target="_blank" next="external" aria-label="Acessar projeto no GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-projeto burguer"></div>
+                </div>
+
+                <!-- projeto 3 -->
+                <div class="card-projetos" data-aos="fade-zoom" data-aos-duration="4000">
+                    <div class="img-projeto idoso-web" ></div>
+                    <div class="info-projeto">
+                        <div class="card-title">
+                            <h3>Projeto Acadêmico – Idoso Ativo Web</h3>
+                            <p>Projeto em Grupo | TCC de Curso Técnico</p>
+                        </div>
+                        <p class="txt-projeto">Idosos na ativa é um site informativo desenvolvido como projeto acadêmico, voltado à qualidade de vida de pessoas idosas. A plataforma reúne conteúdos sobre saúde, bem-estar, lazer e atividades físicas, com o objetivo de incentivar a autonomia e o envelhecimento ativo. Seu design foi pensado para oferecer uma navegação simples, acessível e agradável ao público-alvo.</p>
+                        <div class="btn-projetos">
+                            <a href="https://rebecamarianosanto.github.io/idoso-ativo-web/" target="_blank" next="external" aria-label="Acessar projeto"><i class="fa-solid fa-link"></i> Acessar</a>
+
+                            <a href="https://github.com/rebecamarianosanto/idoso-ativo-web" target="_blank" next="external" aria-label="Acessar projeto no GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- projeto 4 -->
+                <div class="card-projetos position-projeto" data-aos="fade-zoom" data-aos-duration="5000">
+                    <div class="info-projeto">
+                        <div class="card-title">
+                            <h3>Lading Page – Grãos BR | Coffee Shop</h3>
+                            <p>Projeto Pessoal | Em andamento..</p>
+                        </div>
+                        <p class="txt-projeto">Este projeto é uma landing page fictícia desenvolvida como exercício criativo e técnico para o segmento de cafeterias. A proposta foi simular o site moderno e responsivo de um negócio local para divulgar o cardápio, avaliações de clientes, informações sobre o espaço e contato para oferecer uma experiência acolhedora para os amantes de café. (Em deploy)</p>
+                        <div class="btn-projetos">
+                            <a href="#" target="_blank" next="external" aria-label="Acessar projeto"><i class="fa-solid fa-link"></i> Acessar</a>
+
+                            <a href="#" target="_blank" next="external" aria-label="Acessar projeto no GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-projeto coffee" ></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contatos" id="contato">
+        <div class="container-contatos" data-aos="fade-zoom" data-aos-duration="100">
+            <h2>Contate-me</h2>
+            <div class="txt-contato">
+                <p><span>Gostou do meu portfólio?</span> Fico feliz em receber seu feedback para que eu possa evoluir cada vez mais!</p>
+
+                <p><span>Tem uma proposta ou oportunidade profissional?</span> Entre em contato comigo, vou adorar conversar com você!</p>
+            </div>
+            <div class="linha-contatos"></div>
+            <div class="contatos">
+                <a href="mailto: rebecamarianosanto@gmail.com?cc=devrebecamariano@gmail.com&assunto=Portf%C3%B3lio%20Rebeca%20Mariano%3A" target="_blank" next="external" aria-label="Acessar e-mail"><i class="fa-solid fa-envelope"></i>rebecamarianosanto@gmail.com</a>
+                <a href="https://www.linkedin.com/in/rebeca-santo/" target="_blank" next="external" aria-label="Acessar linkedin"><i class="fa-brands fa-linkedin"></i> www.linkedin.com/in/rebeca-santo</a>
+                <a href="https://wa.me/5511949158503?text=Ol%C3%A1%2C%20tudo%20bem%3F" target="_blank" next="external" aria-label="Acessar WhatsApp"><i class="fa-brands fa-whatsapp"></i>(11)94915-8503</a>
+            </div>
+
+        </div>
+        <div class="formulario-contato">
+            <div class="formulario" data-aos="fade-right" data-aos-duration="1000">
+
+                <form class="form" action="https://formsubmit.co/rebecamarianosanto@gmail.com" method="POST" data-aos="fade-zoom" data-aos-duration="100">
+                    <label>
+                        <input class="input" type="text" name="name" id="name-secund" required />
+                        <span>Nome</span>
+                    </label>
+
+                    <label>
+                        <input class="input" type="email" name="email" id="email" required />
+                        <span>E-mail</span>
+                    </label>
+
+                    <label>
+                        <input class="input" id="phone" type="tel" name="phone" required />
+                        <span>Telefone</span>
+                    </label>
+
+                    <label>
+                        <textarea class="input01" rows="3" name="message" id="message" required></textarea>
+                        <span>Mensagem</span>
+                    </label>
+
+                    <!--Confere captcha-->
+                    <input type="hidden" name="_captcha" value="true" />
+                    <!--end de retorno-->
+                    <input type="hidden" name="_next"
+                        value="http://127.0.0.1:5500/tela-obrigado.html" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-medias">
+            <a href="mailto: rebecamarianosanto@gmail.com?cc=devrebecamariano@gmail.com&assunto=Portf%C3%B3lio%20Rebeca%20Mariano%3A" target="_blank" next="external" aria-label="Acessar e-mail"><i class="fa-solid fa-envelope"></i></a>
+
+            <a href="https://wa.me/5511949158503?text=Ol%C3%A1%2C%20tudo%20bem%3F" target="_blank" next="external" aria-label="Acessar WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+            <a href="https://github.com/rebecamarianosanto" target="_blank" next="external" aria-label="Acessar GitHub"><i class="fa-brands fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/rebeca-santo/" target="_blank" next="external" aria-label="Acessar linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>
+            &copy; 2025 - Todos os direitos reservados. Portfólio desenvolvido por Rebeca Mariano
+        </p>  
+    </footer>
+ 
+    <!-- scripts -->
+    <script src="btn-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="about.js"></script>
+    <!-- script aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     
+
+</body>
+</html>
