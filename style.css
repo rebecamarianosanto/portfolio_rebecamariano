@@ -1225,9 +1225,10 @@ footer p {
     }
 
     .container-about {
-        max-width: 100%;
+        max-width: 90%;
         gap: 2rem;
         padding: 10px;
+        overflow: hidden;
     }
 
     .img-about {
