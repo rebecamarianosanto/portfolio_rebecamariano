@@ -1205,7 +1205,7 @@ footer p {
         visibility: hidden;
     }
     .search {
-        width: 97%;
+        width: 95%;
     }
     .resultado-rebeca .img-resultado-rebeca {
         width: 60px;
@@ -1286,8 +1286,8 @@ footer p {
     }
     /* about */
     .img-about {
-        flex: 1 1 400px;
-        max-width: 400px;
+        flex: 1 1 390px;
+        max-width: 390px;
         height: auto;
         background-size: cover;
     }
