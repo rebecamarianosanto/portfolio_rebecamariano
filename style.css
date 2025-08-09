@@ -107,6 +107,7 @@ header{
     top: 0;
     left: 0;
     z-index: 1200;
+    overflow: hidden;
 }
 .logo i{
     color: var(--red);
@@ -264,6 +265,7 @@ nav i{
     display: flex;
     align-items: center;
     justify-content: center;  
+    overflow: hidden;
 }
 .container-hero{
     width: 1020px;
