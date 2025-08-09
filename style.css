@@ -159,7 +159,7 @@ nav i{
     border: transparent;
     border-radius: 50%;
     position: fixed;
-    right: 1.4%;
+    right: 1%;
     z-index: 1000;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
@@ -1122,7 +1122,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 5px 0 5px;
+    padding: 3rem 5px 4px 5px;
     gap: 2rem;
     text-align: center;
     
@@ -1191,9 +1191,12 @@ footer p {
     }
 }
 @media (max-width: 767px) {
+    .btn-menu{
+        right: 0;
+    }
     /* hero */
     header{
-        padding: 10px 1.5rem;
+        padding: 10px ;
     }
     .social-media{
         display: none;
